@@ -1,0 +1,360 @@
+@prefix : <https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/auxiliary.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix welcome: <https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#> .
+@base <https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/auxiliary.ttl> .
+
+<https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/auxiliary.ttl> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/isRequiredBy
+<http://purl.org/dc/terms/isRequiredBy> rdf:type owl:AnnotationProperty .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#conditionValue
+welcome:conditionValue rdf:type owl:AnnotationProperty .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#dependsOn
+welcome:dependsOn rdf:type owl:AnnotationProperty .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#effectLabel
+welcome:effectLabel rdf:type owl:AnnotationProperty .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#slotLabel
+welcome:slotLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#hasFullSentence
+welcome:hasFullSentence rdf:type owl:DatatypeProperty ;
+                        rdfs:domain welcome:processedUtterance .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#processedUtterance
+welcome:processedUtterance rdf:type owl:Class .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#systemUtterance
+welcome:systemUtterance rdf:type owl:Class ;
+                        rdfs:subClassOf welcome:processedUtterance .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#tcnUtterance
+welcome:tcnUtterance rdf:type owl:Class ;
+                     rdfs:subClassOf welcome:processedUtterance .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/auxiliary.ttl#Status_obtainMoreSchoolCompleted_Completed
+:Status_obtainMoreSchoolCompleted_Completed rdf:type owl:NamedIndividual ;
+                                            welcome:hasFullSentence "Yes I completed the degree." ,
+                                                                    "Yes I did." ,
+                                                                    "Yes I finished the degree." ;
+                                            welcome:effectLabel "Completed" ;
+                                            welcome:slotLabel "obtainAdditionalLanguageCourseStatus" ,
+                                                              "obtainMoreEducationalCourseStatus" ,
+                                                              "obtainMoreSchoolCompleted" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/auxiliary.ttl#Status_obtainMoreSchoolCompleted_Enrolled
+:Status_obtainMoreSchoolCompleted_Enrolled rdf:type owl:NamedIndividual ;
+                                           welcome:hasFullSentence "I am attending some courses online." ,
+                                                                   "I am still a student." ,
+                                                                   "I am still attending some classes." ,
+                                                                   "I am still enrolled." ,
+                                                                   "I have not fnished it yet." ,
+                                                                   "I will complete it in a few months." ,
+                                                                   "I will complete it soon." ,
+                                                                   "Not yet." ;
+                                           welcome:effectLabel "Still Enrolled" ;
+                                           welcome:slotLabel "obtainAdditionalLanguageCourseStatus" ,
+                                                             "obtainMoreEducationalCourseStatus" ,
+                                                             "obtainMoreSchoolCompleted" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/auxiliary.ttl#Status_obtainMoreSchoolCompleted_Incomplete
+:Status_obtainMoreSchoolCompleted_Incomplete rdf:type owl:NamedIndividual ;
+                                             welcome:hasFullSentence "Almost. I just did not pass a course." ,
+                                                                     "I did not finish the last grade because my family had to flee." ,
+                                                                     "I did not pass a few subjects." ,
+                                                                     "I finished the first 3 years of Highschool in our village. Then, we fled." ,
+                                                                     "I had to abandon it because my family moved to another city." ,
+                                                                     "No, because we had to flee, I did not finish the last grade of the highschool." ,
+                                                                     "Only the first 5 grades because then we moved to another city and I could continue to go to school." ;
+                                             welcome:effectLabel "Incomplete" ;
+                                             welcome:slotLabel "obtainAdditionalLanguageCourseStatus" ,
+                                                               "obtainMoreEducationalCourseStatus" ,
+                                                               "obtainMoreSchoolCompleted" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#CVPurpose_obtainCVCreationInterest_Completed
+welcome:CVPurpose_obtainCVCreationInterest_Completed rdf:type owl:NamedIndividual ;
+                                                     welcome:hasFullSentence "Can you show me the completed one?" ,
+                                                                             "I want to review the already completed one." ,
+                                                                             "review completed" ;
+                                                     welcome:effectLabel "Review Completed" ;
+                                                     welcome:slotLabel "obtainCVCreationInterest" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#CVPurpose_obtainCVCreationInterest_Incomplete
+welcome:CVPurpose_obtainCVCreationInterest_Incomplete rdf:type owl:NamedIndividual ;
+                                                      welcome:hasFullSentence "Can I see what we already introduced?" ,
+                                                                              "I want to continue." ,
+                                                                              "Let's continue!" ,
+                                                                              "Let's continue, but I would like to correct some information we introduced before" ,
+                                                                              "continue incomplet" ;
+                                                      welcome:effectLabel "Continue Incomplete" ;
+                                                      welcome:slotLabel "obtainCVCreationInterest" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#CVPurpose_obtainCVCreationInterest_New
+welcome:CVPurpose_obtainCVCreationInterest_New rdf:type owl:NamedIndividual ;
+                                               welcome:hasFullSentence "I want to restart with a new version." ,
+                                                                       "I want to start with a new version." ,
+                                                                       "I would like to create a new one." ,
+                                                                       "Let's start from the beginning!" ,
+                                                                       "create new" ;
+                                               welcome:effectLabel "Create New" ;
+                                               welcome:slotLabel "obtainCVCreationInterest" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#ScenarioIntroduction_obtainSubtopic_DE
+welcome:ScenarioIntroduction_obtainSubtopic_DE rdf:type owl:NamedIndividual ;
+                                               welcome:hasFullSentence "recognition of bachelor degree" ,
+                                                                       "recognition of doctorate degree" ,
+                                                                       "recognition of high school degree" ,
+                                                                       "recognition of master degree" ,
+                                                                       "recognition of online school degree" ,
+                                                                       "recognition of primary school degree" ,
+                                                                       "recognition of school degree" ,
+                                                                       "recognition of technical school degree" ,
+                                                                       "recognition of university diploma" ,
+                                                                       "recognition of vocational school degree" ;
+                                               welcome:conditionValue "DE" ;
+                                               welcome:dependsOn "CountryCode" ;
+                                               welcome:slotLabel "obtainSubtopic" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of bachelor degree" ;
+   welcome:effectLabel "flagUDiplomaRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of vocational school degree" ;
+   welcome:effectLabel "flagSchoolDegreeRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of doctorate degree" ;
+   welcome:effectLabel "flagUDiplomaRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of high school degree" ;
+   welcome:effectLabel "flagSchoolDegreeRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of master degree" ;
+   welcome:effectLabel "flagUDiplomaRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of online school degree" ;
+   welcome:effectLabel "flagSchoolDegreeRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of primary school degree" ;
+   welcome:effectLabel "flagSchoolDegreeRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of school degree" ;
+   welcome:effectLabel "flagSchoolDegreeRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of technical school degree" ;
+   welcome:effectLabel "flagSchoolDegreeRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of university diploma" ;
+   welcome:effectLabel "flagUDiplomaRequested"
+ ] .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#ScenarioIntroduction_obtainSubtopic_ES
+welcome:ScenarioIntroduction_obtainSubtopic_ES rdf:type owl:NamedIndividual ;
+                                               welcome:hasFullSentence "recognition of foreign master and university degrees" ,
+                                                                       "recognition of non-university qualifications" ,
+                                                                       "recognition of professional skills" ;
+                                               welcome:conditionValue "ES" ;
+                                               welcome:dependsOn "CountryCode" ;
+                                               welcome:slotLabel "obtainSubtopic" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_ES ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of foreign master and university degrees" ;
+   welcome:effectLabel "flagUMasterRecogRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_ES ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of non-university qualifications" ;
+   welcome:effectLabel "flagNonUQualificationRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_ES ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "recognition of professional skills" ;
+   welcome:effectLabel "flagProfSkillRecogRequested"
+ ] .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#ScenarioIntroduction_obtainSubtopic_GR
+welcome:ScenarioIntroduction_obtainSubtopic_GR rdf:type owl:NamedIndividual ;
+                                               welcome:hasFullSentence "access to health care" ,
+                                                                       "duty hospitals" ,
+                                                                       "medical emergency" ,
+                                                                       "personal doctor" ,
+                                                                       "register to personal doctor" ;
+                                               welcome:conditionValue "GR" ;
+                                               welcome:dependsOn "CountryCode" ;
+                                               welcome:slotLabel "obtainSubtopic" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_GR ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "access to health care" ;
+   welcome:effectLabel "flagDocRegistrationRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_GR ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "duty hospitals" ;
+   welcome:effectLabel "flagMedEmergencyRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_GR ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "medical emergency" ;
+   welcome:effectLabel "flagMedEmergencyRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_GR ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "personal doctor" ;
+   welcome:effectLabel "flagDocRegistrationRequested"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:ScenarioIntroduction_obtainSubtopic_GR ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "register to personal doctor" ;
+   welcome:effectLabel "flagDocRegistrationRequested"
+ ] .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#SimulationIntroduction_obtainMatterConcern_DE
+welcome:SimulationIntroduction_obtainMatterConcern_DE rdf:type owl:NamedIndividual ;
+                                                      welcome:hasFullSentence "I need your help." ,
+                                                                              "I received a letter and I want to book an appointment." ,
+                                                                              "I received a message and I want to book an appointment." ,
+                                                                              "I received a phone call and I want to book an appointment." ,
+                                                                              "I received an email and I want to book an appointment." ,
+                                                                              "I want to book an appointment." ;
+                                                      welcome:conditionValue "DE" ;
+                                                      welcome:dependsOn "CountryCode" ;
+                                                      welcome:slotLabel "obtainMatterConcern" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:SimulationIntroduction_obtainMatterConcern_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "I need your help." ;
+   welcome:effectLabel "False"^^xsd:string
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:SimulationIntroduction_obtainMatterConcern_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "I received a letter and I want to book an appointment." ;
+   welcome:effectLabel "True"^^xsd:string
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:SimulationIntroduction_obtainMatterConcern_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "I received a message and I want to book an appointment." ;
+   welcome:effectLabel "True"^^xsd:string
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:SimulationIntroduction_obtainMatterConcern_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "I received a phone call and I want to book an appointment." ;
+   welcome:effectLabel "True"^^xsd:string
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:SimulationIntroduction_obtainMatterConcern_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "I received an email and I want to book an appointment." ;
+   welcome:effectLabel "True"^^xsd:string
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource welcome:SimulationIntroduction_obtainMatterConcern_DE ;
+   owl:annotatedProperty welcome:hasFullSentence ;
+   owl:annotatedTarget "I want to book an appointment." ;
+   welcome:effectLabel "False"^^xsd:string
+ ] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

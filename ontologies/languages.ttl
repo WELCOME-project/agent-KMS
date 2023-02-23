@@ -1,0 +1,1566 @@
+@prefix : <https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/faq.ttl#> .
+@prefix faq: <https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/faq.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix welcome: <https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#> .
+@base <https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/languages.ttl> .
+
+<https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/languages.ttl> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#hasValue
+welcome:hasValue rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#iso3code
+welcome:iso3code rdf:type owl:DatatypeProperty .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#languageName
+welcome:languageName rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Language
+welcome:Language rdf:type owl:Class .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#SystemLanguage
+welcome:SystemLanguage rdf:type owl:Class ;
+                       rdfs:subClassOf welcome:Language .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Abkhazian
+welcome:Abkhazian rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Abkhazian" ;
+                  welcome:iso3code "ABK" ;
+                  welcome:languageName "Abkhazian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Afar
+welcome:Afar rdf:type owl:NamedIndividual ,
+                      welcome:Language ;
+             welcome:hasValue "Afar" ;
+             welcome:iso3code "AAR" ;
+             welcome:languageName "Afar" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Afrikaans
+welcome:Afrikaans rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Afrikaans" ;
+                  welcome:iso3code "AFR" ;
+                  welcome:languageName "Afrikaans" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Akan
+welcome:Akan rdf:type owl:NamedIndividual ,
+                      welcome:Language ;
+             welcome:hasValue "Akan" ;
+             welcome:iso3code "AKA" ;
+             welcome:languageName "Akan" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Albanian
+welcome:Albanian rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Albanian" ;
+                 welcome:iso3code "SQI" ;
+                 welcome:languageName "Albanian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Algerian_Saharan_Arabic
+welcome:Algerian_Saharan_Arabic rdf:type owl:NamedIndividual ,
+                                         welcome:Language ;
+                                welcome:hasValue "Algerian Saharan Arabic" ;
+                                welcome:iso3code "AAO" ;
+                                welcome:languageName "Algerian Saharan Arabic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Amharic
+welcome:Amharic rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Amharic" ;
+                welcome:iso3code "AMH" ;
+                welcome:languageName "Amharic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Arabic
+welcome:Arabic rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Arabic" ;
+               welcome:iso3code "ARA" ;
+               welcome:languageName "Arabic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Aragonese
+welcome:Aragonese rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Aragonese" ;
+                  welcome:iso3code "ARG" ;
+                  welcome:languageName "Aragonese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Armenian
+welcome:Armenian rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Armenian" ;
+                 welcome:iso3code "HYE" ;
+                 welcome:languageName "Armenian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Assamese
+welcome:Assamese rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Assamese" ;
+                 welcome:iso3code "ASM" ;
+                 welcome:languageName "Assamese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Avaric
+welcome:Avaric rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Avaric" ;
+               welcome:iso3code "AVA" ;
+               welcome:languageName "Avaric" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Avestan
+welcome:Avestan rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Avestan" ;
+                welcome:iso3code "AVE" ;
+                welcome:languageName "Avestan" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Aymara
+welcome:Aymara rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Aymara" ;
+               welcome:iso3code "AYM" ;
+               welcome:languageName "Aymara" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Azerbaijani
+welcome:Azerbaijani rdf:type owl:NamedIndividual ,
+                             welcome:Language ;
+                    welcome:hasValue "Azerbaijani" ;
+                    welcome:iso3code "AZE" ;
+                    welcome:languageName "Azerbaijani" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Bambara
+welcome:Bambara rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Bambara" ;
+                welcome:iso3code "BAM" ;
+                welcome:languageName "Bambara" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Bashkir
+welcome:Bashkir rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Bashkir" ;
+                welcome:iso3code "BAK" ;
+                welcome:languageName "Bashkir" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Basque
+welcome:Basque rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Basque" ;
+               welcome:iso3code "EUS" ;
+               welcome:languageName "Basque" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Belarusian
+welcome:Belarusian rdf:type owl:NamedIndividual ,
+                            welcome:Language ;
+                   welcome:hasValue "Belarusian" ;
+                   welcome:iso3code "BEL" ;
+                   welcome:languageName "Belarusian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Bengali
+welcome:Bengali rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Bengali" ;
+                welcome:iso3code "BEN" ;
+                welcome:languageName "Bengali" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Bislama
+welcome:Bislama rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Bislama" ;
+                welcome:iso3code "BIS" ;
+                welcome:languageName "Bislama" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Bosnian
+welcome:Bosnian rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Bosnian" ;
+                welcome:iso3code "BOS" ;
+                welcome:languageName "Bosnian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Breton
+welcome:Breton rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Breton" ;
+               welcome:iso3code "BRE" ;
+               welcome:languageName "Breton" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Bulgarian
+welcome:Bulgarian rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Bulgarian" ;
+                  welcome:iso3code "BUL" ;
+                  welcome:languageName "Bulgarian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Burmese
+welcome:Burmese rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Burmese" ;
+                welcome:iso3code "MYA" ;
+                welcome:languageName "Burmese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Catalan
+welcome:Catalan rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Catalan" ;
+                welcome:iso3code "CAT" ;
+                welcome:languageName "Catalan" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Central_Khmer
+welcome:Central_Khmer rdf:type owl:NamedIndividual ,
+                               welcome:Language ;
+                      welcome:hasValue "Central Khmer" ;
+                      welcome:iso3code "KHM" ;
+                      welcome:languageName "Central Khmer" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Chamorro
+welcome:Chamorro rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Chamorro" ;
+                 welcome:iso3code "CHA" ;
+                 welcome:languageName "Chamorro" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Chechen
+welcome:Chechen rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Chechen" ;
+                welcome:iso3code "CHE" ;
+                welcome:languageName "Chechen" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Chichewa
+welcome:Chichewa rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Chichewa" ;
+                 welcome:iso3code "NYA" ;
+                 welcome:languageName "Chichewa" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Chinese
+welcome:Chinese rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Chinese" ;
+                welcome:iso3code "ZHO" ;
+                welcome:languageName "Chinese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Church_Slavic
+welcome:Church_Slavic rdf:type owl:NamedIndividual ,
+                               welcome:Language ;
+                      welcome:hasValue "Church Slavic" ;
+                      welcome:iso3code "CHU" ;
+                      welcome:languageName "Church Slavic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Chuvash
+welcome:Chuvash rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Chuvash" ;
+                welcome:iso3code "CHV" ;
+                welcome:languageName "Chuvash" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Cornish
+welcome:Cornish rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Cornish" ;
+                welcome:iso3code "COR" ;
+                welcome:languageName "Cornish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Corsican
+welcome:Corsican rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Corsican" ;
+                 welcome:iso3code "COS" ;
+                 welcome:languageName "Corsican" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Cree
+welcome:Cree rdf:type owl:NamedIndividual ,
+                      welcome:Language ;
+             welcome:hasValue "Cree" ;
+             welcome:iso3code "CRE" ;
+             welcome:languageName "Cree" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Croatian
+welcome:Croatian rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Croatian" ;
+                 welcome:iso3code "HRV" ;
+                 welcome:languageName "Croatian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Czech
+welcome:Czech rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Czech" ;
+              welcome:iso3code "CES" ;
+              welcome:languageName "Czech" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Danish
+welcome:Danish rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Danish" ;
+               welcome:iso3code "DAN" ;
+               welcome:languageName "Danish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Divehi
+welcome:Divehi rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Divehi" ;
+               welcome:iso3code "DIV" ;
+               welcome:languageName "Divehi" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Dutch
+welcome:Dutch rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Dutch" ;
+              welcome:iso3code "NLD" ;
+              welcome:languageName "Dutch" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Dzongkha
+welcome:Dzongkha rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Dzongkha" ;
+                 welcome:iso3code "DZO" ;
+                 welcome:languageName "Dzongkha" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#English
+welcome:English rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "English" ;
+                welcome:iso3code "ENG" ;
+                welcome:languageName "English" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Esperanto
+welcome:Esperanto rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Esperanto" ;
+                  welcome:iso3code "EPO" ;
+                  welcome:languageName "Esperanto" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Estonian
+welcome:Estonian rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Estonian" ;
+                 welcome:iso3code "EST" ;
+                 welcome:languageName "Estonian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Ewe
+welcome:Ewe rdf:type owl:NamedIndividual ,
+                     welcome:Language ;
+            welcome:hasValue "Ewe" ;
+            welcome:iso3code "EWE" ;
+            welcome:languageName "Ewe" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Faroese
+welcome:Faroese rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Faroese" ;
+                welcome:iso3code "FAO" ;
+                welcome:languageName "Faroese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Fijian
+welcome:Fijian rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Fijian" ;
+               welcome:iso3code "FIJ" ;
+               welcome:languageName "Fijian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Finnish
+welcome:Finnish rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Finnish" ;
+                welcome:iso3code "FIN" ;
+                welcome:languageName "Finnish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#French
+welcome:French rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "French" ;
+               welcome:iso3code "FRA" ;
+               welcome:languageName "French" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Fulah
+welcome:Fulah rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Fulah" ;
+              welcome:iso3code "FUL" ;
+              welcome:languageName "Fulah" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Gaelic
+welcome:Gaelic rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Gaelic" ;
+               welcome:iso3code "GD" ;
+               welcome:languageName "Gaelic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Galician
+welcome:Galician rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Galician" ;
+                 welcome:iso3code "GLG" ;
+                 welcome:languageName "Galician" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Ganda
+welcome:Ganda rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Ganda" ;
+              welcome:iso3code "LUG" ;
+              welcome:languageName "Ganda" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Georgian
+welcome:Georgian rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Georgian" ;
+                 welcome:iso3code "KAT" ;
+                 welcome:languageName "Georgian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#German
+welcome:German rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "German" ;
+               welcome:iso3code "DEU" ;
+               welcome:languageName "German" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Greek
+welcome:Greek rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Greek" ;
+              welcome:iso3code "ELL" ;
+              welcome:languageName "Greek" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Guarani
+welcome:Guarani rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Guarani" ;
+                welcome:iso3code "GRN" ;
+                welcome:languageName "Guarani" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Gujarati
+welcome:Gujarati rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Gujarati" ;
+                 welcome:iso3code "GUJ" ;
+                 welcome:languageName "Gujarati" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Haitian
+welcome:Haitian rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Haitian" ;
+                welcome:iso3code "HAT" ;
+                welcome:languageName "Haitian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Hausa
+welcome:Hausa rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Hausa" ;
+              welcome:iso3code "HAU" ;
+              welcome:languageName "Hausa" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Hebrew
+welcome:Hebrew rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Hebrew" ;
+               welcome:iso3code "HEB" ;
+               welcome:languageName "Hebrew" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Herero
+welcome:Herero rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Herero" ;
+               welcome:iso3code "HER" ;
+               welcome:languageName "Herero" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Hindi
+welcome:Hindi rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Hindi" ;
+              welcome:iso3code "HIN" ;
+              welcome:languageName "Hindi" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Hiri_Motu
+welcome:Hiri_Motu rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Hiri Motu" ;
+                  welcome:iso3code "HMO" ;
+                  welcome:languageName "Hiri Motu" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Hungarian
+welcome:Hungarian rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Hungarian" ;
+                  welcome:iso3code "HUN" ;
+                  welcome:languageName "Hungarian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Icelandic
+welcome:Icelandic rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Icelandic" ;
+                  welcome:iso3code "ISL" ;
+                  welcome:languageName "Icelandic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Ido
+welcome:Ido rdf:type owl:NamedIndividual ,
+                     welcome:Language ;
+            welcome:hasValue "Ido" ;
+            welcome:iso3code "IDO" ;
+            welcome:languageName "Ido" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Igbo
+welcome:Igbo rdf:type owl:NamedIndividual ,
+                      welcome:Language ;
+             welcome:hasValue "Igbo" ;
+             welcome:iso3code "IBO" ;
+             welcome:languageName "Igbo" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Indonesian
+welcome:Indonesian rdf:type owl:NamedIndividual ,
+                            welcome:Language ;
+                   welcome:hasValue "Indonesian" ;
+                   welcome:iso3code "IND" ;
+                   welcome:languageName "Indonesian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Interlingua
+welcome:Interlingua rdf:type owl:NamedIndividual ,
+                             welcome:Language ;
+                    welcome:hasValue "Interlingua" ;
+                    welcome:iso3code "INA" ;
+                    welcome:languageName "Interlingua" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Interlingue
+welcome:Interlingue rdf:type owl:NamedIndividual ,
+                             welcome:Language ;
+                    welcome:hasValue "Interlingue" ;
+                    welcome:iso3code "ILE" ;
+                    welcome:languageName "Interlingue" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Inuktitut
+welcome:Inuktitut rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Inuktitut" ;
+                  welcome:iso3code "IKU" ;
+                  welcome:languageName "Inuktitut" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Inupiaq
+welcome:Inupiaq rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Inupiaq" ;
+                welcome:iso3code "IPK" ;
+                welcome:languageName "Inupiaq" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Irish
+welcome:Irish rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Irish" ;
+              welcome:iso3code "GLE" ;
+              welcome:languageName "Irish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Italian
+welcome:Italian rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Italian" ;
+                welcome:iso3code "ITA" ;
+                welcome:languageName "Italian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Japanese
+welcome:Japanese rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Japanese" ;
+                 welcome:iso3code "JPN" ;
+                 welcome:languageName "Japanese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Javanese
+welcome:Javanese rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Javanese" ;
+                 welcome:iso3code "JAV" ;
+                 welcome:languageName "Javanese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kalaallisut
+welcome:Kalaallisut rdf:type owl:NamedIndividual ,
+                             welcome:Language ;
+                    welcome:hasValue "Kalaallisut" ;
+                    welcome:iso3code "KAL" ;
+                    welcome:languageName "Kalaallisut" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kannada
+welcome:Kannada rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Kannada" ;
+                welcome:iso3code "KAN" ;
+                welcome:languageName "Kannada" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kanuri
+welcome:Kanuri rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Kanuri" ;
+               welcome:iso3code "KAU" ;
+               welcome:languageName "Kanuri" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kashmiri
+welcome:Kashmiri rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Kashmiri" ;
+                 welcome:iso3code "KAS" ;
+                 welcome:languageName "Kashmiri" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kazakh
+welcome:Kazakh rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Kazakh" ;
+               welcome:iso3code "KAZ" ;
+               welcome:languageName "Kazakh" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kikuyu
+welcome:Kikuyu rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Kikuyu" ;
+               welcome:iso3code "KIK" ;
+               welcome:languageName "Kikuyu" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kinyarwanda
+welcome:Kinyarwanda rdf:type owl:NamedIndividual ,
+                             welcome:Language ;
+                    welcome:hasValue "Kinyarwanda" ;
+                    welcome:iso3code "KIN" ;
+                    welcome:languageName "Kinyarwanda" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kirghiz
+welcome:Kirghiz rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Kirghiz" ;
+                welcome:iso3code "KIR" ;
+                welcome:languageName "Kirghiz" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Komi
+welcome:Komi rdf:type owl:NamedIndividual ,
+                      welcome:Language ;
+             welcome:hasValue "Komi" ;
+             welcome:iso3code "KOM" ;
+             welcome:languageName "Komi" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kongo
+welcome:Kongo rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Kongo" ;
+              welcome:iso3code "KON" ;
+              welcome:languageName "Kongo" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Korean
+welcome:Korean rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Korean" ;
+               welcome:iso3code "KOR" ;
+               welcome:languageName "Korean" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kuanyama
+welcome:Kuanyama rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Kuanyama" ;
+                 welcome:iso3code "KUA" ;
+                 welcome:languageName "Kuanyama" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Kurdish
+welcome:Kurdish rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Kurdish" ;
+                welcome:iso3code "KUR" ;
+                welcome:languageName "Kurdish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Lao
+welcome:Lao rdf:type owl:NamedIndividual ,
+                     welcome:Language ;
+            welcome:hasValue "Lao" ;
+            welcome:iso3code "LAO" ;
+            welcome:languageName "Lao" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Latin
+welcome:Latin rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Latin" ;
+              welcome:iso3code "LAT" ;
+              welcome:languageName "Latin" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Latvian
+welcome:Latvian rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Latvian" ;
+                welcome:iso3code "LAV" ;
+                welcome:languageName "Latvian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Libyan_Arabic
+welcome:Libyan_Arabic rdf:type owl:NamedIndividual ,
+                               welcome:Language ;
+                      welcome:hasValue "Libyan Arabic" ;
+                      welcome:iso3code "AYL" ;
+                      welcome:languageName "Libyan Arabic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Limburgan
+welcome:Limburgan rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Limburgan" ;
+                  welcome:iso3code "LIM" ;
+                  welcome:languageName "Limburgan" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Lingala
+welcome:Lingala rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Lingala" ;
+                welcome:iso3code "LIN" ;
+                welcome:languageName "Lingala" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Lithuanian
+welcome:Lithuanian rdf:type owl:NamedIndividual ,
+                            welcome:Language ;
+                   welcome:hasValue "Lithuanian" ;
+                   welcome:iso3code "LIT" ;
+                   welcome:languageName "Lithuanian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Luba-Katanga
+welcome:Luba-Katanga rdf:type owl:NamedIndividual ,
+                              welcome:Language ;
+                     welcome:hasValue "Luba-Katanga" ;
+                     welcome:iso3code "LUB" ;
+                     welcome:languageName "Luba-Katanga" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Luxembourgish
+welcome:Luxembourgish rdf:type owl:NamedIndividual ,
+                               welcome:Language ;
+                      welcome:hasValue "Luxembourgish" ;
+                      welcome:iso3code "LTZ" ;
+                      welcome:languageName "Luxembourgish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Macedonian
+welcome:Macedonian rdf:type owl:NamedIndividual ,
+                            welcome:Language ;
+                   welcome:hasValue "Macedonian" ;
+                   welcome:iso3code "MKD" ;
+                   welcome:languageName "Macedonian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Malagasy
+welcome:Malagasy rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Malagasy" ;
+                 welcome:iso3code "MLG" ;
+                 welcome:languageName "Malagasy" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Malay
+welcome:Malay rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Malay" ;
+              welcome:iso3code "MSA" ;
+              welcome:languageName "Malay" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Malayalam
+welcome:Malayalam rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Malayalam" ;
+                  welcome:iso3code "MAL" ;
+                  welcome:languageName "Malayalam" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Maltese
+welcome:Maltese rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Maltese" ;
+                welcome:iso3code "MLT" ;
+                welcome:languageName "Maltese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Manx
+welcome:Manx rdf:type owl:NamedIndividual ,
+                      welcome:Language ;
+             welcome:hasValue "Manx" ;
+             welcome:iso3code "GLV" ;
+             welcome:languageName "Manx" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Maori
+welcome:Maori rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Maori" ;
+              welcome:iso3code "MRI" ;
+              welcome:languageName "Maori" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Marathi
+welcome:Marathi rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Marathi" ;
+                welcome:iso3code "MAR" ;
+                welcome:languageName "Marathi" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Marshallese
+welcome:Marshallese rdf:type owl:NamedIndividual ,
+                             welcome:Language ;
+                    welcome:hasValue "Marshallese" ;
+                    welcome:iso3code "MAH" ;
+                    welcome:languageName "Marshallese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Mongolian
+welcome:Mongolian rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Mongolian" ;
+                  welcome:iso3code "MON" ;
+                  welcome:languageName "Mongolian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Moroccan_Arabic
+welcome:Moroccan_Arabic rdf:type owl:NamedIndividual ,
+                                 welcome:Language ;
+                        welcome:hasValue "Moroccan Arabic" ;
+                        welcome:iso3code "ARY" ;
+                        welcome:languageName "Moroccan Arabic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Nauru
+welcome:Nauru rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Nauru" ;
+              welcome:iso3code "NAU" ;
+              welcome:languageName "Nauru" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Navajo
+welcome:Navajo rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Navajo" ;
+               welcome:iso3code "NAV" ;
+               welcome:languageName "Navajo" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Ndonga
+welcome:Ndonga rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Ndonga" ;
+               welcome:iso3code "NDO" ;
+               welcome:languageName "Ndonga" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Nepali
+welcome:Nepali rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Nepali" ;
+               welcome:iso3code "NEP" ;
+               welcome:languageName "Nepali" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#North_Levantine_Arabic
+welcome:North_Levantine_Arabic rdf:type owl:NamedIndividual ,
+                                        welcome:Language ;
+                               welcome:hasValue "North Levantine Arabic" ;
+                               welcome:iso3code "APC" ;
+                               welcome:languageName "North Levantine Arabic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#North_Ndebele
+welcome:North_Ndebele rdf:type owl:NamedIndividual ,
+                               welcome:Language ;
+                      welcome:hasValue "North Ndebele" ;
+                      welcome:iso3code "NDE" ;
+                      welcome:languageName "North Ndebele" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Northern_Sami
+welcome:Northern_Sami rdf:type owl:NamedIndividual ,
+                               welcome:Language ;
+                      welcome:hasValue "Northern Sami" ;
+                      welcome:iso3code "SME" ;
+                      welcome:languageName "Northern Sami" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Norwegian
+welcome:Norwegian rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Norwegian" ;
+                  welcome:iso3code "NOR" ;
+                  welcome:languageName "Norwegian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Norwegian_Bokm
+welcome:Norwegian_Bokm rdf:type owl:NamedIndividual ,
+                                welcome:Language ;
+                       welcome:hasValue "Norwegian Bokm" ;
+                       welcome:iso3code "NOB" ;
+                       welcome:languageName "Norwegian Bokm" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Norwegian_Nynorsk
+welcome:Norwegian_Nynorsk rdf:type owl:NamedIndividual ,
+                                   welcome:Language ;
+                          welcome:hasValue "Norwegian Nynorsk" ;
+                          welcome:iso3code "NNO" ;
+                          welcome:languageName "Norwegian Nynorsk" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Occitan
+welcome:Occitan rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Occitan" ;
+                welcome:iso3code "OCI" ;
+                welcome:languageName "Occitan" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Ojibwa
+welcome:Ojibwa rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Ojibwa" ;
+               welcome:iso3code "OJI" ;
+               welcome:languageName "Ojibwa" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Oriya
+welcome:Oriya rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Oriya" ;
+              welcome:iso3code "ORI" ;
+              welcome:languageName "Oriya" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Oromo
+welcome:Oromo rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Oromo" ;
+              welcome:iso3code "ORM" ;
+              welcome:languageName "Oromo" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Ossetian
+welcome:Ossetian rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Ossetian" ;
+                 welcome:iso3code "OSS" ;
+                 welcome:languageName "Ossetian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Pali
+welcome:Pali rdf:type owl:NamedIndividual ,
+                      welcome:Language ;
+             welcome:hasValue "Pali" ;
+             welcome:iso3code "PLI" ;
+             welcome:languageName "Pali" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Pashto
+welcome:Pashto rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Pashto" ;
+               welcome:iso3code "PUS" ;
+               welcome:languageName "Pashto" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Persian
+welcome:Persian rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Persian" ;
+                welcome:iso3code "FAS" ;
+                welcome:languageName "Persian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Polish
+welcome:Polish rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Polish" ;
+               welcome:iso3code "POL" ;
+               welcome:languageName "Polish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Portuguese
+welcome:Portuguese rdf:type owl:NamedIndividual ,
+                            welcome:Language ;
+                   welcome:hasValue "Portuguese" ;
+                   welcome:iso3code "POR" ;
+                   welcome:languageName "Portuguese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Punjabi
+welcome:Punjabi rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Punjabi" ;
+                welcome:iso3code "PAN" ;
+                welcome:languageName "Punjabi" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Quechua
+welcome:Quechua rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Quechua" ;
+                welcome:iso3code "QUE" ;
+                welcome:languageName "Quechua" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Romanian
+welcome:Romanian rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Romanian" ;
+                 welcome:iso3code "RON" ;
+                 welcome:languageName "Romanian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Romansh
+welcome:Romansh rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Romansh" ;
+                welcome:iso3code "ROH" ;
+                welcome:languageName "Romansh" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Rundi
+welcome:Rundi rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Rundi" ;
+              welcome:iso3code "RUN" ;
+              welcome:languageName "Rundi" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Russian
+welcome:Russian rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Russian" ;
+                welcome:iso3code "RUS" ;
+                welcome:languageName "Russian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Samoan
+welcome:Samoan rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Samoan" ;
+               welcome:iso3code "SMO" ;
+               welcome:languageName "Samoan" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Sango
+welcome:Sango rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Sango" ;
+              welcome:iso3code "SAG" ;
+              welcome:languageName "Sango" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Sanskrit
+welcome:Sanskrit rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Sanskrit" ;
+                 welcome:iso3code "SAN" ;
+                 welcome:languageName "Sanskrit" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Sardinian
+welcome:Sardinian rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Sardinian" ;
+                  welcome:iso3code "SRD" ;
+                  welcome:languageName "Sardinian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Serbian
+welcome:Serbian rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Serbian" ;
+                welcome:iso3code "SRP" ;
+                welcome:languageName "Serbian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Shona
+welcome:Shona rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Shona" ;
+              welcome:iso3code "SNA" ;
+              welcome:languageName "Shona" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Sichuan_Yi
+welcome:Sichuan_Yi rdf:type owl:NamedIndividual ,
+                            welcome:Language ;
+                   welcome:hasValue "Sichuan Yi" ;
+                   welcome:iso3code "III" ;
+                   welcome:languageName "Sichuan Yi" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Sindhi
+welcome:Sindhi rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Sindhi" ;
+               welcome:iso3code "SND" ;
+               welcome:languageName "Sindhi" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Sinhala
+welcome:Sinhala rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Sinhala" ;
+                welcome:iso3code "SIN" ;
+                welcome:languageName "Sinhala" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Slovak
+welcome:Slovak rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Slovak" ;
+               welcome:iso3code "SLK" ;
+               welcome:languageName "Slovak" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Slovenian
+welcome:Slovenian rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Slovenian" ;
+                  welcome:iso3code "SLV" ;
+                  welcome:languageName "Slovenian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Somali
+welcome:Somali rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Somali" ;
+               welcome:iso3code "SOM" ;
+               welcome:languageName "Somali" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#South_Levantine_Arabic
+welcome:South_Levantine_Arabic rdf:type owl:NamedIndividual ,
+                                        welcome:Language ;
+                               welcome:hasValue "South Levantine Arabic" ;
+                               welcome:iso3code "AJP" ;
+                               welcome:languageName "South Levantine Arabic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#South_Ndebele
+welcome:South_Ndebele rdf:type owl:NamedIndividual ,
+                               welcome:Language ;
+                      welcome:hasValue "South Ndebele" ;
+                      welcome:iso3code "NBL" ;
+                      welcome:languageName "South Ndebele" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Southern_Sotho
+welcome:Southern_Sotho rdf:type owl:NamedIndividual ,
+                                welcome:Language ;
+                       welcome:hasValue "Southern Sotho" ;
+                       welcome:iso3code "SOT" ;
+                       welcome:languageName "Southern Sotho" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Spanish
+welcome:Spanish rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Spanish" ;
+                welcome:iso3code "SPA" ;
+                welcome:languageName "Spanish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Standard_Arabic
+welcome:Standard_Arabic rdf:type owl:NamedIndividual ,
+                                 welcome:Language ;
+                        welcome:hasValue "Standard Arabic" ;
+                        welcome:iso3code "ARB" ;
+                        welcome:languageName "Standard Arabic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Sundanese
+welcome:Sundanese rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Sundanese" ;
+                  welcome:iso3code "SUN" ;
+                  welcome:languageName "Sundanese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Swahili
+welcome:Swahili rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Swahili" ;
+                welcome:iso3code "SWA" ;
+                welcome:languageName "Swahili" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Swati
+welcome:Swati rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Swati" ;
+              welcome:iso3code "SSW" ;
+              welcome:languageName "Swati" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Swedish
+welcome:Swedish rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Swedish" ;
+                welcome:iso3code "SWE" ;
+                welcome:languageName "Swedish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tagalog
+welcome:Tagalog rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Tagalog" ;
+                welcome:iso3code "TGL" ;
+                welcome:languageName "Tagalog" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tahitian
+welcome:Tahitian rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Tahitian" ;
+                 welcome:iso3code "TAH" ;
+                 welcome:languageName "Tahitian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tajik
+welcome:Tajik rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Tajik" ;
+              welcome:iso3code "TGK" ;
+              welcome:languageName "Tajik" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tamil
+welcome:Tamil rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Tamil" ;
+              welcome:iso3code "TAM" ;
+              welcome:languageName "Tamil" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tatar
+welcome:Tatar rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Tatar" ;
+              welcome:iso3code "TAT" ;
+              welcome:languageName "Tatar" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Telugu
+welcome:Telugu rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Telugu" ;
+               welcome:iso3code "TEL" ;
+               welcome:languageName "Telugu" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Thai
+welcome:Thai rdf:type owl:NamedIndividual ,
+                      welcome:Language ;
+             welcome:hasValue "Thai" ;
+             welcome:iso3code "THA" ;
+             welcome:languageName "Thai" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tibetan
+welcome:Tibetan rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Tibetan" ;
+                welcome:iso3code "BOD" ;
+                welcome:languageName "Tibetan" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tigrinya
+welcome:Tigrinya rdf:type owl:NamedIndividual ,
+                          welcome:Language ;
+                 welcome:hasValue "Tigrinya" ;
+                 welcome:iso3code "TIR" ;
+                 welcome:languageName "Tigrinya" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tonga
+welcome:Tonga rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Tonga" ;
+              welcome:iso3code "TON" ;
+              welcome:languageName "Tonga" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tsonga
+welcome:Tsonga rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Tsonga" ;
+               welcome:iso3code "TSO" ;
+               welcome:languageName "Tsonga" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tswana
+welcome:Tswana rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Tswana" ;
+               welcome:iso3code "TSN" ;
+               welcome:languageName "Tswana" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Tunisian_Arabic
+welcome:Tunisian_Arabic rdf:type owl:NamedIndividual ,
+                                 welcome:Language ;
+                        welcome:hasValue "Tunisian Arabic" ;
+                        welcome:iso3code "AEB" ;
+                        welcome:languageName "Tunisian Arabic" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Turkish
+welcome:Turkish rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Turkish" ;
+                welcome:iso3code "TUR" ;
+                welcome:languageName "Turkish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Turkmen
+welcome:Turkmen rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Turkmen" ;
+                welcome:iso3code "TUK" ;
+                welcome:languageName "Turkmen" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Twi
+welcome:Twi rdf:type owl:NamedIndividual ,
+                     welcome:Language ;
+            welcome:hasValue "Twi" ;
+            welcome:iso3code "TWI" ;
+            welcome:languageName "Twi" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Uighur
+welcome:Uighur rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Uighur" ;
+               welcome:iso3code "UIG" ;
+               welcome:languageName "Uighur" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Ukrainian
+welcome:Ukrainian rdf:type owl:NamedIndividual ,
+                           welcome:Language ;
+                  welcome:hasValue "Ukrainian" ;
+                  welcome:iso3code "UKR" ;
+                  welcome:languageName "Ukrainian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Urdu
+welcome:Urdu rdf:type owl:NamedIndividual ,
+                      welcome:Language ;
+             welcome:hasValue "Urdu" ;
+             welcome:iso3code "URD" ;
+             welcome:languageName "Urdu" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Uzbek
+welcome:Uzbek rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Uzbek" ;
+              welcome:iso3code "UZB" ;
+              welcome:languageName "Uzbek" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Venda
+welcome:Venda rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Venda" ;
+              welcome:iso3code "VEN" ;
+              welcome:languageName "Venda" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Vietnamese
+welcome:Vietnamese rdf:type owl:NamedIndividual ,
+                            welcome:Language ;
+                   welcome:hasValue "Vietnamese" ;
+                   welcome:iso3code "VIE" ;
+                   welcome:languageName "Vietnamese" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Volap
+welcome:Volap rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Volap" ;
+              welcome:iso3code "VOL" ;
+              welcome:languageName "Volap" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Walloon
+welcome:Walloon rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Walloon" ;
+                welcome:iso3code "WLN" ;
+                welcome:languageName "Walloon" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Welsh
+welcome:Welsh rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Welsh" ;
+              welcome:iso3code "CYM" ;
+              welcome:languageName "Welsh" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Western_Frisian
+welcome:Western_Frisian rdf:type owl:NamedIndividual ,
+                                 welcome:Language ;
+                        welcome:hasValue "Western Frisian" ;
+                        welcome:iso3code "FRY" ;
+                        welcome:languageName "Western Frisian" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Wolof
+welcome:Wolof rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Wolof" ;
+              welcome:iso3code "WOL" ;
+              welcome:languageName "Wolof" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Xhosa
+welcome:Xhosa rdf:type owl:NamedIndividual ,
+                       welcome:Language ;
+              welcome:hasValue "Xhosa" ;
+              welcome:iso3code "XHO" ;
+              welcome:languageName "Xhosa" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Yiddish
+welcome:Yiddish rdf:type owl:NamedIndividual ,
+                         welcome:Language ;
+                welcome:hasValue "Yiddish" ;
+                welcome:iso3code "YID" ;
+                welcome:languageName "Yiddish" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Yoruba
+welcome:Yoruba rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Yoruba" ;
+               welcome:iso3code "YOR" ;
+               welcome:languageName "Yoruba" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Zhuang
+welcome:Zhuang rdf:type owl:NamedIndividual ,
+                        welcome:Language ;
+               welcome:hasValue "Zhuang" ;
+               welcome:iso3code "ZHA" ;
+               welcome:languageName "Zhuang" .
+
+
+###  https://raw.githubusercontent.com/gtzionis/WelcomeOntology/main/welcome.ttl#Zulu
+welcome:Zulu rdf:type owl:NamedIndividual ,
+                      welcome:Language ;
+             welcome:hasValue "Zulu" ;
+             welcome:iso3code "ZUL" ;
+             welcome:languageName "Zulu" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
