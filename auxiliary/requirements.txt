@@ -1,0 +1,5 @@
+Flask==2.0.2
+sentence-transformers==2.1.0
+numpy==1.21.2
+six==1.16.0
+protobuf==3.19.1
