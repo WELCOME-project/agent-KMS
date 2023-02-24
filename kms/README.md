@@ -42,7 +42,7 @@ $ docker run -d --restart always --name kms-spring kms-spring
 
 To run the Eclipse RDF4J Server and Workbench execute:
 ```
-$ docker run -d -p 8080:8080 -e JAVA_OPTS="-Xms1g -Xmx4g" \
+$ docker run -d -p 8081:8081 -e JAVA_OPTS="-Xms1g -Xmx4g" \
 	-v data:/var/rdf4j -v logs:/usr/local/tomcat/logs eclipse/rdf4j-workbench:latest
 ```
 
