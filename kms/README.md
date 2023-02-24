@@ -31,6 +31,7 @@ In addition, you need to install Eclipse DF4J Server and Workbench
 as follows:
 ```
 $ docker pull eclipse/rdf4j-workbench:3.7.7
+```
 
 
 ## Run 
