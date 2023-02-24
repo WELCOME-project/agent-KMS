@@ -1,8 +1,14 @@
 # agent-KMS
-The discourse relation tool can be used for identifying 
-relations between two adjacent utterances of a user. More specifically, it can recognize 
-four major types of discourse relations (temporal, contingency, comparison, and expansion) as well as 
-the absense of a relation between the utterances. 
+The Knowledge Management Service component (KMS) is part of the Agent and is a central component of the WELCOME architecture. It acts as a middleware that handles storage, processing, and retrieval of local agent knowledge that is available in the Local Agent Knowledge Repository (LAKR). 
+
+It encapsulates the following subcomponents:
+
+Knowledge Base Population (KBP) which is responsible for (a) translating incoming data from various formats to RDF-based representation, considering the schema of the WELCOME Ontologies, and (b) for populating them into the LAKR
+
+Dynamic Ontology Extension (DOE) which facilitates the integration of information from an external multilingual semantic network to retrieve information and dynamically extend existing knowledge
+S
+emantic Reasoning Framework (SRF) which implements a reasoning framework combining native OWL2 reasoning and SPARQL rules to support the semantic service selection performed by the Agent. In addition, SRF facilitates topic detection (Section 5.2.2.2), sentence similarity (Section 5.2.2.2) and discourse relation techniques (Section 6.2) to extract insights and knowledge from textual data.
+
 
 ## Requirements
 `Java=11.0.18` 
@@ -42,7 +48,8 @@ More information can be found in [dockerhub](https://hub.docker.com/r/eclipse/rd
 The module supports the following endpoints:
 
 | URL | Method | Accepts | Description |
-| --- | --- | --- | --- |
+|
+| -----------------------------:|:---------:|:------:| -------------------------------------------------------------------------------------------------------------|
 | /wpm/RegInput                 | POST      | JSON   | Receives TCN registration info |
 | /wpm/handshaking              | POST      | JSON   | Receives handshaking message (i.e., user has logged in) |
 | /app/speaktoavatar            | POST      | JSON   | Receives the scenario selection made by user through the mobile app |
