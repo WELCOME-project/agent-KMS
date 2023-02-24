@@ -44,27 +44,4 @@ $ docker run -d -p 8080:8080 -e JAVA_OPTS="-Xms1g -Xmx4g" \
 
 More information can be found in [dockerhub](https://hub.docker.com/r/eclipse/rdf4j-workbench)
 
-## Endpoint
-
-The module supports the following endpoints:
-
-| URL | Method | Accepts | Description |
-|
-| -----------------------------:|:---------:|:------:| -------------------------------------------------------------------------------------------------------------|
-| /wpm/RegInput                 | POST      | JSON   | Receives TCN registration info |
-| /wpm/handshaking              | POST      | JSON   | Receives handshaking message (i.e., user has logged in) |
-| /app/speaktoavatar            | POST      | JSON   | Receives the scenario selection made by user through the mobile app |
-| /lid/input                    | POST      | JSON   | Receives a list of language codes along with a percentage score for each language identified in an utterance |
-| /app/tcnProfile               | POST,GET  | JSON   | This endpoint can be used to update and retrieve the TCN’s profile |
-| /app/tcnProfile/{section}     | GET       | JSON   | This endpoint can be used to retrieve the CV sections |
-| /app/avatarConfig             | POST,GET  | JSON   | This endpoint can be used to update and retrieve the avatar configuration settings |
-| /app/minigame/{minigame}      | POST,GET  | JSON   | This endpoint can be used to update and retrieve the minigame progress |
-| /app/chcPreferences           | POST,GET  | JSON   | This endpoint can be used to update and retrieve the preferences for the Cohabitation scenario |
-| /app/AppProgress              | POST,GET  | JSON   | This endpoint can be used to store the progress of the language course coordination scenario |
-| /dips/input                   | POST      | Turtle | This endpoint can be used to send a Dialogue Input Packages |
-| /chc/notifications            | POST      | JSON   | This endpoint can be used to trigger the Cohabitation scenario |
-| /agent/notifications          | POST      | Turtle | This endpoint can be used to send notifications|
-| /las/input                    | POST      | JSON   | This endpoint can be used to send the results of the language analysis |
-| /nlg/input                    | POST      | Text   | This endpoint can be used to send the results of the natural language generation |
-| /dms/input                    | POST      | JSON   | This endpoint can be used to send the results of the dialogue management service |
 
