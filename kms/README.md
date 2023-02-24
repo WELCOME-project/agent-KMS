@@ -27,7 +27,7 @@ the generated war file in the same folder and run:
 $ docker build -t kms-spring .
 ```
 
-In addition, you need to install Eclipse DF4J Server and Workbench
+In addition, you need to install Eclipse RDF4J Server and Workbench
 as follows:
 ```
 $ docker pull eclipse/rdf4j-workbench:3.7.7
@@ -35,9 +35,13 @@ $ docker pull eclipse/rdf4j-workbench:3.7.7
 
 
 ## Run 
-You can run the application with the following command 
+You can run KMS application with the following command:
 ```
 $ docker run -d --restart always --name kms-spring kms-spring
+```
+
+To run the Eclipse RDF4J Server and Workbench execute:
+```
 $ docker run -d -p 8080:8080 -e JAVA_OPTS="-Xms1g -Xmx4g" \
 	-v data:/var/rdf4j -v logs:/usr/local/tomcat/logs eclipse/rdf4j-workbench:latest
 ```
