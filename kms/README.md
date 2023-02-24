@@ -3,11 +3,11 @@ The Knowledge Management Service component (KMS) is part of the Agent and is a c
 
 It encapsulates the following subcomponents:
 
-Knowledge Base Population (KBP) which is responsible for (a) translating incoming data from various formats to RDF-based representation, considering the schema of the WELCOME Ontologies, and (b) for populating them into the LAKR
+* Knowledge Base Population (KBP) which is responsible for (a) translating incoming data from various formats to RDF-based representation, considering the schema of the WELCOME Ontologies, and (b) for populating them into the LAKR
 
-Dynamic Ontology Extension (DOE) which facilitates the integration of information from an external multilingual semantic network to retrieve information and dynamically extend existing knowledge
-S
-emantic Reasoning Framework (SRF) which implements a reasoning framework combining native OWL2 reasoning and SPARQL rules to support the semantic service selection performed by the Agent. In addition, SRF facilitates topic detection (Section 5.2.2.2), sentence similarity (Section 5.2.2.2) and discourse relation techniques (Section 6.2) to extract insights and knowledge from textual data.
+* Dynamic Ontology Extension (DOE) which facilitates the integration of information from an external multilingual semantic network to retrieve information and dynamically extend existing knowledge
+
+* Semantic Reasoning Framework (SRF) which implements a reasoning framework combining native OWL2 reasoning and SPARQL rules to support the semantic service selection performed by the Agent. In addition, SRF facilitates topic detection (Section 5.2.2.2), sentence similarity (Section 5.2.2.2) and discourse relation techniques (Section 6.2) to extract insights and knowledge from textual data.
 
 
 ## Requirements
