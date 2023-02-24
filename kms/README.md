@@ -44,7 +44,7 @@ $ docker run -d -p 8080:8080 -e JAVA_OPTS="-Xms1g -Xmx4g" \
 
 More information can be found in [dockerhub](https://hub.docker.com/r/eclipse/rdf4j-workbench)
 
-**Endpoint**
+## Endpoint
 
 The module supports the following endpoints:
 
